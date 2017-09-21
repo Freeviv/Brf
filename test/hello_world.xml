@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resource>
+    <prefix name="test">
+        <file path="__main__.py" name="main_file"/>
+        <file path="file_parser.py" name="file_parser"/>
+    </prefix>
+    <prefix name="test_2">
+        <file path="FileTree.py" name="file_tree"/>
+        <file path="failure.py" name="fail"/>
+        <file path="__main__.py" name="fail"/>
+        <file path="Generator.py" name="generator"/>
+        <file path="/home/janschon/Test.blend" name="big_file"/>
+    </prefix>
+</resource>

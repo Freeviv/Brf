@@ -70,3 +70,4 @@ class FileTree():
             for fi in prefix.file_list:
                 size = size + os.path.getsize(fi.path)
         return size
+

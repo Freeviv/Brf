@@ -46,3 +46,4 @@ class FileParser():
     
     def get_tree(self):
         return self.ft
+

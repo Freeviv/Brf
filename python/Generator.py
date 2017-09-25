@@ -10,7 +10,11 @@ import os
 import binascii
 
 DECLARATION = "static const unsigned char"
-
+# needs to be tested
+NO_OPT_ON_WIN = "#pragma optimize( "", off )"
+NO_OPT_ON_UNIX = "#pragma GCC push_options\n#pragma GCC optimize (\"O0\")"
+NO_OPT_OFF_WIN = "#pragma GCC pop_options"
+NO_OPT_OFF_UNIX = "#pragma optimize( "", on )"
 
 class Generator():
     def __init__(self,m_path,m_tree):
@@ -46,3 +50,4 @@ class Generator():
                              str(file_buffer).replace('[','{').replace(']','}')
                              .replace('\'',''))
                     pr.write(";\n")
+
